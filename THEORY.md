@@ -33,4 +33,7 @@ Backends like GTSAM distribute residual errors across a factor graph. Optimizing
 
 *   **Sodhi et al. (2019):** *Online and Consistent Occupancy Grid Mapping*. [cs.cmu.edu](https://www.cs.cmu.edu/~kaess/pub/Sodhi19iros.pdf)
 *   **Liu et al. (2024):** *Voxel-SLAM: Accurate and Versatile LiDAR-Inertial SLAM*. [arXiv:2410.08935](https://arxiv.org/html/2410.08935v1)
+*   **Xu et al. (2022):** *FAST-LIO2: Fast Direct LiDAR-Inertial Odometry*. [arXiv:2107.04413](https://arxiv.org/abs/2107.04413)
+*   **Labbé & Michaud (2019):** *RTAB-Map as an Open-Source Lidar and Visual SLAM Library for Large-Scale and Long-Term Online Operation*. [Wiley Online Library](https://onlinelibrary.wiley.com/doi/abs/10.1002/rob.21831)
+*   **Dellaert (2012):** *Factor Graphs and GTSAM: A Hands-On Introduction*. [Georgia Tech](https://borg.cc.gatech.edu/sites/default/files/gtsam.pdf)
 *   **Livox HAP/Mid-360 Algorithms:** *Advancements in Non-Repetitive Scanning*. [livoxtech.com](https://www.livoxtech.com/news/hap_algorithms)
