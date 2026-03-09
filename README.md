@@ -5,19 +5,19 @@
 
 ## Overview
 
-This project evaluates different 3D SLAM architectures for robots equipped with Livox Mid-360 LiDARs. The core hypothesis is that mapping in 3D and subsequently projecting to 2D provides better robustness than direct 2D SLAM. This is particularly relevant when handling non-repetitive scanning patterns [6] and environments prone to geometric degeneracy [2].
+This project evaluates different 3D SLAM architectures for robots equipped with Livox Mid-360 LiDARs. The core hypothesis is that mapping in 3D and subsequently projecting to 2D provides better robustness than direct 2D SLAM [11]. This is particularly relevant when handling non-repetitive scanning patterns [6] and environments prone to geometric degeneracy [2, 9, 10].
 
 ## Experimental Setup
 
 The benchmark compares three distinct workflows in a simulated environment:
 
-1.  **Standard Hybrid:** `fast-lio2` [3] as the frontend coupled with `rtabmap` [4] (SuperPoint + GTSAM [5]) as the backend.
-2.  **Modern Hybrid:** `GLIM` for odometry frontend with `rtabmap` (SuperPoint + GTSAM) for the backend.
-3.  **Unified Architecture:** Pure `GLIM` implementation.
+1.  **Standard Hybrid:** `fast-lio2` [3] as the frontend coupled with `rtabmap` [4] (SuperPoint [8] + GTSAM [5]) as the backend.
+2.  **Modern Hybrid:** `GLIM` [7] for odometry frontend with `rtabmap` [4] (SuperPoint [8] + GTSAM [5]) for the backend.
+3.  **Unified Architecture:** Pure `GLIM` [7] implementation.
 
 ## Technical Challenges
 
-*   **Non-Repetitive Pattern Simulation:** A custom Ignition (Ign) Gazebo plugin is required to accurately model the "flower" scan pattern of the Livox Mid-360 [6].
+*   **Non-Repetitive Pattern Simulation:** A custom Ignition (Ign) Gazebo plugin is required to accurately model the "flower" scan pattern of the Livox Mid-360 [6, 12].
 *   **Metrological Integrity:** The simulation must reflect the physical FoV asymmetry (+52° to -7°) and the point accumulation density over time.
 
 ## Theoretical Foundation
